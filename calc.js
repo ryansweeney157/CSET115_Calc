@@ -26,3 +26,9 @@ function calculateResult() {
         display.value = 'error'
     }
 }
+
+//makes sure calculator only contains valid characters
+function ValidExpression(expression) {
+    var validChars = /^[0-9+\-*/.()]+$/;
+    return validChars.test(expression)
+}
