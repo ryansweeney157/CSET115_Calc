@@ -60,3 +60,13 @@ function squareNumber() {
         display.value = 'error'
     }
 }
+
+function calculatePercenetage() {
+    var currentValue = parseFloat(display.value);
+    if (!isNaN(currentValue)) {
+        display.value = currentValue / 100;
+
+    } else {
+        display.value = 'error';
+    }
+}
