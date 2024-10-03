@@ -53,7 +53,7 @@ function SquareRoot() {
 
 //pretty much same thing as square root, but sets it to the power of 2
 function squareNumber() {
-    var currentValue = parseFLoat(display.value);
+    var currentValue = parseFloat(display.value);
     if (!isNaN(currentValue)) {
         display.value = Math.pow(currentValue, 2);
     } else {
@@ -61,7 +61,7 @@ function squareNumber() {
     }
 }
 
-function calculatePercenetage() {
+function calculatePercentage() {
     var currentValue = parseFloat(display.value);
     if (!isNaN(currentValue)) {
         display.value = currentValue / 100;

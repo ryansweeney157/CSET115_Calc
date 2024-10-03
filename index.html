@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="container">
+        <div class="moving2">
+            <p>Please Enter Equation</p>
+            <input type="text" id="display" disabled>
+        </div>
+    <div class="moving">
+        <div >
+            <button onclick="calculatePercentage()">%</button>
+            <button onclick="clearEntry()">CE</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteNum()">DEL</button>
+            </div>
+                    <div class="row5">
+                    <button onclick="">?</button>
+                    <button onclick="squareNumber()">x²</button>
+                    <button onclick="SquareRoot()">√x</button>
+                    <button onclick="addToCalc('÷')"> ÷ </button>
+                </div>
+                
+                <div class="row4">
+            <button onclick="addToCalc('7')">7</button>
+            <button onclick="addToCalc('8')">8</button>
+            <button onclick="addToCalc('9')">9</button>
+            <button onclick="addToCalc('*')">x</button>
+            </div>
+                <div class="row3">
+                    <button onclick="addToCalc('4')">4</button>
+                    <button onclick="addToCalc('5')">5</button>
+                    <button onclick="addToCalc('6')">6</button>
+                    <button onclick="addToCalc('-')">-</button>
+                </div>
+            <div class="row2">
+            <button onclick="addToCalc('1')">1</button>
+            <button onclick="addToCalc('2')">2</button>
+            <button onclick="addToCalc('3')">3</button>
+            <button onclick="addToCalc('+')">+</button>
+            </div>
+                    <div class="row1">
+                     <button onclick="">?</button>
+                     <button onclick="addToCalc(0)">0</button>
+                    <button onclick="addToCalc('.')">.</button>
+                    <button onclick="calculateResult()">=</button>
+                    
+                    </div>
+    </div>
+     </div>
+     <script src="calc.js"></script>
+     </body>
+     </html>
