@@ -32,3 +32,23 @@ function ValidExpression(expression) {
     var validChars = /^[0-9+\-*/.()]+$/;
     return validChars.test(expression)
 }
+
+//converts to floating-point number so it can calculate decimal, checks if its valid, then calculates the square root.  
+function SquareRoot() {
+    var currentValue = parseFloat(display.value);
+    if (!isNaN(currentValue)) {
+        display.value = Math.sqrt(currentValue);
+    
+    } else {
+        display.value = 'error';
+    }
+}
+
+function squareNumber() {
+    var currentValue = parseFLoat(display.value);
+    if (!isNaN(currentValue)) {
+        display.value = Math.pow(currentValue, 2);
+    } else {
+        display.value = 'error'
+    }
+}
