@@ -13,15 +13,15 @@
         </div>
     <div class="moving">
         <div >
-            <button onclick="">%</button>
-            <button onclick="clearDisplay()">CE</button>
-            <button onclick="">C</button>
+            <button onclick="calculatePercentage()">%</button>
+            <button onclick="clearEntry()">CE</button>
+            <button onclick="clearDisplay()">C</button>
             <button onclick="deleteNum()">DEL</button>
             </div>
                     <div class="row5">
                     <button onclick="">?</button>
-                    <button onclick="">x²</button>
-                    <button onclick="">√x</button>
+                    <button onclick="squareNumber()">x²</button>
+                    <button onclick="SquareRoot()">√x</button>
                     <button onclick="addToCalc('÷')"> ÷ </button>
                 </div>
                 
@@ -47,7 +47,7 @@
                      <button onclick="">?</button>
                      <button onclick="addToCalc(0)">0</button>
                     <button onclick="addToCalc('.')">.</button>
-                    <button onclick="">=</button>
+                    <button onclick="calculateResult()">=</button>
                     
                     </div>
     </div>
