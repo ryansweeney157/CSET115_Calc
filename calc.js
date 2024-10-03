@@ -11,6 +11,13 @@ function deleteNum() {
 
 }
 
+//slices string from beginning and subtracts the length of the last entry, which makes sure it only clears the last part. This takes the last part of the split array and gets rid of it. 
+function clearEntry() {
+    var currentValue = display.value;
+    var lastEntry = currentValue.split(/[\+\-\*\/]/).pop();
+    display.value = currentValue.slice(0, -lastEntry.length);
+}
+
 //gets value of element and adds it to the calculator
 function addToCalc(value) {
     display.value += value;
@@ -28,7 +35,7 @@ function calculateResult() {
 }
 
 //makes sure calculator only contains valid characters
-function ValidExpression(expression) {
+function validExpression(expression) {
     var validChars = /^[0-9+\-*/.()]+$/;
     return validChars.test(expression)
 }
@@ -44,6 +51,7 @@ function SquareRoot() {
     }
 }
 
+//pretty much same thing as square root, but sets it to the power of 2
 function squareNumber() {
     var currentValue = parseFLoat(display.value);
     if (!isNaN(currentValue)) {
