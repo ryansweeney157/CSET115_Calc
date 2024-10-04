@@ -62,11 +62,8 @@ function squareNumber() {
 }
 
 function calculatePercentage() {
-    var currentValue = parseFloat(display.value);
-    if (!isNaN(currentValue)) {
-        display.value = currentValue / 100;
+   var display = document.getElementById('display');
+   //captures the last number in the string, and makes sure that the percentage only affects that.
+   display.value = display.value.replace(/(\d+\.?\d*)$/, (match) => match / 100);
 
-    } else {
-        display.value = 'error';
-    }
 }
