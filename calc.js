@@ -13,10 +13,12 @@ function deleteNum() {
 
 //slices string from beginning and subtracts the length of the last entry, which makes sure it only clears the last part. This takes the last part of the split array and gets rid of it. 
 function clearEntry() {
-    var currentValue = display.value;
+
+var currentValue = display.value;
     var lastEntry = currentValue.split(/[\+\-\*\/]/).pop();
     display.value = currentValue.slice(0, -lastEntry.length);
 }
+
 
 //gets value of element and adds it to the calculator
 function addToCalc(value) {
